@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 4000;
 
 
 app.use(bodyParser.json());
